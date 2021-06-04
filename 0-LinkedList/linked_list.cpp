@@ -2,11 +2,12 @@
 using namespace std ;
 
 class node{
-    private :
+
+    public :
+
         int data ;
         node * next ;
 
-    public :
         node(int d){
             data = d ;
             next = NULL ;
@@ -41,6 +42,7 @@ int main(){
     insertAtHead(head , 2) ;
     insertAtHead(head , 1) ;
     insertAtHead(head , 0) ;
+    print(head) ;
 
     return 0 ;
 }
